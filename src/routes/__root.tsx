@@ -92,6 +92,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
+      { name: "twitter:title", content: "Vaishnavi Yadav — Finance Analyst & Business Analytics" },
+      { name: "description", content: "Resume - Portfolio" },
+      { property: "og:description", content: "Resume - Portfolio" },
+      { name: "twitter:description", content: "Resume - Portfolio" },
+      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/B2taMyAs8kgBN8TyFVsGt5o3SqE3/social-images/social-1780129677002-ChatGPT_Image_May_30,_2026,_01_54_09_PM.webp" },
+      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/B2taMyAs8kgBN8TyFVsGt5o3SqE3/social-images/social-1780129677002-ChatGPT_Image_May_30,_2026,_01_54_09_PM.webp" },
     ],
     links: [
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
