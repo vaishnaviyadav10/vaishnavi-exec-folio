@@ -19,7 +19,7 @@ export const profile = {
   headline: "Finance Analyst | Business Analytics | CMA Candidate",
   location: "Lucknow, Uttar Pradesh, India",
   email: "vaishnaviyadav1307@gmail.com",
-  linkedin: "https://www.linkedin.com/in/vaishnavi-yadav1307",
+  linkedin: "https://www.linkedin.com/in/vaishnavi-yadav1",
   github: "https://github.com/vaishnaviyadav10",
   resume: "/Vaishnavi-Yadav-Resume.pdf",
   summary:
