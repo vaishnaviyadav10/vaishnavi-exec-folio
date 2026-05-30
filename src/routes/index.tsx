@@ -1,29 +1,57 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Toaster } from "@/components/ui/sonner";
+import { Navbar } from "@/components/portfolio/Navbar";
+import { Hero } from "@/components/portfolio/Hero";
+import { About } from "@/components/portfolio/About";
+import { Experience } from "@/components/portfolio/Experience";
+import { Skills } from "@/components/portfolio/Skills";
+import { Projects } from "@/components/portfolio/Projects";
+import { Certifications } from "@/components/portfolio/Certifications";
+import { CareerVision } from "@/components/portfolio/CareerVision";
+import { Contact } from "@/components/portfolio/Contact";
+import { Footer } from "@/components/portfolio/Footer";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Your App" },
-      { name: "description", content: "Replace this with a one-sentence description of your app." },
-      { property: "og:title", content: "Your App" },
-      { property: "og:description", content: "Replace this with a one-sentence description of your app." },
+      { title: "Vaishnavi Yadav — Finance Analyst & Business Analytics Portfolio" },
+      {
+        name: "description",
+        content:
+          "Portfolio of Vaishnavi Yadav — Finance Analyst, Business Analyst and CMA Candidate skilled in financial analysis, corporate finance, business intelligence, data analytics, Tableau, Power BI, SQL and Python.",
+      },
+      {
+        name: "keywords",
+        content:
+          "Finance Analyst, Financial Analyst, Business Analyst, Corporate Finance, Investment Banking, Business Intelligence, Data Analytics, CMA Candidate, MBA Applicant, Tableau, Power BI, SQL, Python, Financial Modelling",
+      },
+      { property: "og:title", content: "Vaishnavi Yadav — Finance Analyst & Business Analytics" },
+      {
+        property: "og:description",
+        content:
+          "Finance Analyst | Business Analytics | CMA Candidate. Financial analysis, corporate finance and data-driven business intelligence.",
+      },
+      { property: "og:url", content: "/" },
     ],
+    links: [{ rel: "canonical", href: "/" }],
   }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
 function Index() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
+    <main className="bg-background">
+      <Navbar />
+      <Hero />
+      <About />
+      <Experience />
+      <Skills />
+      <Projects />
+      <Certifications />
+      <CareerVision />
+      <Contact />
+      <Footer />
+      <Toaster position="top-center" richColors />
+    </main>
   );
 }
