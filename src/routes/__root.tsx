@@ -127,7 +127,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           },
           email: "mailto:vaishnaviyadav1307@gmail.com",
           sameAs: [
-            "https://www.linkedin.com/in/vaishnavi-yadav1307",
+            "https://www.linkedin.com/in/vaishnavi-yadav1",
             "https://github.com/vaishnaviyadav10",
           ],
         }),
