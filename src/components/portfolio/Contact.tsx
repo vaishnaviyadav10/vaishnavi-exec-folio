@@ -17,7 +17,7 @@ const contactSchema = z.object({
 
 const channels = [
   { icon: Mail, label: "Email", value: profile.email, href: `mailto:${profile.email}` },
-  { icon: Linkedin, label: "LinkedIn", value: "vaishnavi-yadav1307", href: profile.linkedin },
+  { icon: Linkedin, label: "LinkedIn", value: "vaishnavi-yadav1", href: profile.linkedin },
   { icon: Github, label: "GitHub", value: "vaishnaviyadav10", href: profile.github },
   { icon: MapPin, label: "Location", value: profile.location, href: undefined },
 ];
