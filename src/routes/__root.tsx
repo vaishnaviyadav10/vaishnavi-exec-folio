@@ -77,19 +77,54 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "Vaishnavi Yadav — Finance Analyst & Business Analytics" },
+      {
+        name: "description",
+        content:
+          "Vaishnavi Yadav — Finance Analyst, Business Analytics professional and CMA Candidate. BBA International Finance graduate specializing in financial analysis, corporate finance, and business intelligence.",
+      },
+      { name: "author", content: "Vaishnavi Yadav" },
+      { property: "og:title", content: "Vaishnavi Yadav — Finance Analyst & Business Analytics" },
+      {
+        property: "og:description",
+        content:
+          "Finance Analyst | Business Analytics | CMA Candidate. Financial analysis, corporate finance, and data-driven business intelligence.",
+      },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Lovable" },
     ],
     links: [
+      { rel: "preconnect", href: "https://fonts.googleapis.com" },
+      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
+      {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap",
+      },
       {
         rel: "stylesheet",
         href: appCss,
+      },
+    ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Person",
+          name: "Vaishnavi Yadav",
+          jobTitle: "Finance Analyst | Business Analytics | CMA Candidate",
+          address: {
+            "@type": "PostalAddress",
+            addressLocality: "Lucknow",
+            addressRegion: "Uttar Pradesh",
+            addressCountry: "India",
+          },
+          email: "mailto:vaishnaviyadav1307@gmail.com",
+          sameAs: [
+            "https://www.linkedin.com/in/vaishnavi-yadav1307",
+            "https://github.com/vaishnaviyadav10",
+          ],
+        }),
       },
     ],
   }),
